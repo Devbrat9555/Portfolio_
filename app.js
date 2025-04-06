@@ -1,10 +1,9 @@
-// Set current year in footer
 document.addEventListener("DOMContentLoaded", () => {
     const yearSpan = document.getElementById("year");
     yearSpan.textContent = new Date().getFullYear();
   });
   
-  // Scroll to top button logic
+
   const scrollTopBtn = document.getElementById("scrollTopBtn");
   
   window.onscroll = function () {
