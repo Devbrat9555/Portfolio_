@@ -8,3 +8,7 @@ This is my personal portfolio website built using **HTML**, **CSS**, and **JavaS
 - JavaScript
 
 ## 📁 Project Structure
+portfolio/
+├── index.html
+├── style.css
+├── script.js
