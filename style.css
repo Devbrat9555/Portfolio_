@@ -180,6 +180,12 @@ footer a:hover {
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
+#scrollTopBtn {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+}
 
 #scrollTopBtn:hover {
     background-color: #0097a7;
