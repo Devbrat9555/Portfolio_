@@ -1,4 +1,4 @@
-import aktuPrep from "../assets/projects/AktuPrep.png";
+import aktuPrep from "../assets/projects/AktuPrep_Latest.png";
 import fixit from "../assets/projects/Fixit.png";
 import passwordGen from "../assets/projects/Random-Password-Generator.png";
 import portfolioNew from "../assets/projects/Portfolio_new.png";
