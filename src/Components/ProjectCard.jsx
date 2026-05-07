@@ -31,15 +31,13 @@ const ProjectCard = ({
         enableHover={true}
       >
         <GlowingCard glowColor={borderGlow} className="space-y-4">
-          {/* Main glass card */}
-          <div className={`relative height-full
-              bg-gradient-to-br ${gradientFrom} ${gradientVia} ${gradientTo} 
-              backdrop-blur-3xl 
-              border-[0.5px] border-white/40 shadow-[0_8px_32px_0_rgba(0,0,0,0.4)]
-              rounded-4xl 
-              px-5 py-8
-              sm:px-8 sm:py-10
-              lg:px-14 lg:py-12 
+          {/* Main glass card - Total Isolation */}
+          <div className={`relative h-full
+              bg-[#020617] border border-white/10 shadow-[0_30px_60px_rgba(0,0,0,0.8)]
+              rounded-[40px] 
+              px-6 py-10
+              sm:px-10 sm:py-12
+              lg:px-16 lg:py-14 
               overflow-hidden`}>
             <div className="relative grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
               {/* Left Content */}

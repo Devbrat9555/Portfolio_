@@ -91,7 +91,7 @@ export default function Hero() {
           </a>
           
           {/* Contact Button - Liquid Border */}
-          <a href="mailto:yadavdevbrat022@gmail.com" className="w-full sm:w-auto group">
+          <a href="#contact" className="w-full sm:w-auto group">
             <button className="relative w-full sm:w-auto px-14 py-6 bg-white text-black font-black text-xs tracking-[0.4em] rounded-full transition-all duration-500 hover:bg-transparent hover:text-white border border-transparent hover:border-white/20 active:scale-95 overflow-hidden">
               <span className="relative z-10 flex items-center justify-center gap-3">
                 LET'S TALK

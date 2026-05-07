@@ -28,78 +28,77 @@ function Footer() {
       >
 
         {/* LEFT SIDE */}
-        <div className="leftside w-full md:w-1/2 flex flex-col items-center md:items-start">
+        <div className="leftside w-full md:w-1/2 flex flex-col items-center md:items-start relative z-10">
           
           <div className="mb-8">
-            <h1 className="text-3xl md:text-5xl font-light mb-4">
-              <span className="text-white">Lets, </span>
-              <span className="text-white italic">connect</span>
+            <h1 className="text-4xl md:text-7xl font-black mb-4 tracking-tighter leading-none">
+              <span className="text-white">LETS </span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600 italic">CONNECT</span>
             </h1>
 
-            <p className="text-gray-300 text-sm max-w-xl leading-relaxed mx-auto md:mx-0">
-              I’m open for collaborations, freelance work, and full-time roles.
+            <p className="text-slate-400 text-lg max-w-xl leading-relaxed mx-auto md:mx-0 font-light">
+              Architecting the future, one line of code at a time. <br className="hidden md:block" />
+              Open for <span className="text-white font-medium">Opportunities</span> & <span className="text-white font-medium">Collaborations</span>.
             </p>
           </div>
 
-          {/* CTA BUTTONS */}
-          <div className="flex gap-2 mb-10 md:mb-24 justify-center md:justify-end">
-            <a href={resume} target="_blank" rel="noopener noreferrer">
-              <HoverBorderGradient
-                animated={true}
-                as="button"
-                containerClassName="rounded-full"
-                className="bg-gray-800/50 backdrop-blur-sm text-white rounded-full hover:bg-gray-700/50 transition-all duration-300 hover:cursor-pointer flex items-center gap-2"
-              >
-                <span>Resume</span>
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </HoverBorderGradient>
+          {/* CTA BUTTONS - REDUCED GAP */}
+          <div className="flex flex-wrap gap-4 mb-10 justify-center md:justify-start w-full">
+            <a href={resume} target="_blank" rel="noopener noreferrer" className="group relative">
+               <div className="absolute -inset-1 bg-sky-500/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+               <button className="flex items-center gap-2 px-8 py-4 bg-white/5 border border-white/10 text-white rounded-2xl font-bold tracking-widest text-xs uppercase transition-all hover:border-sky-500/50 hover:bg-white/10">
+                  <svg className="w-4 h-4 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  </svg>
+                  RESUME
+               </button>
             </a>
 
-            <a href="mailto:yadavdevbrat022@gmail.com" target="_blank" rel="noopener noreferrer">
-              <HoverBorderGradient
-                as="button"
-                containerClassName="rounded-full"
-                className="dark:bg-black bg-white text-black dark:text-white flex items-center gap-2 hover:cursor-pointer"
-              >
-                <span>Get In Touch</span>
-              </HoverBorderGradient>
+            <a href="mailto:yadavdevbrat022@gmail.com" className="group relative">
+               <div className="absolute -inset-1 bg-blue-500/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+               <button className="flex items-center gap-2 px-8 py-4 bg-sky-500 text-white rounded-2xl font-black tracking-widest text-xs uppercase transition-all hover:scale-105 shadow-[0_0_20px_rgba(14,165,233,0.3)]">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                  </svg>
+                  GET IN TOUCH
+               </button>
             </a>
           </div>
-          <div>
-            <FooterNote />
-          </div>
+          
+          <FooterNote />
         </div>
 
         {/*Right side Card and SOCIALS */}
-        <div className="rightside w-full md:w-1/2 flex flex-col items-center md:items-end gap-10">
-            <div>
-              <TiltedCard
-                imageSrc={devbratImg}
-                altText="Devbrat Yadav"
-                captionText="Devbrat Yadav - Full-Stack Developer"
-                containerHeight="300px"
-                containerWidth="250px"
-                imageHeight="300px"
-                imageWidth="250px"
-                rotateAmplitude={12}
-                scaleOnHover={1.1}
-                showMobileWarning={false}
-                showTooltip={true}
-                displayOverlayContent={true}
-                overlayContent={
-                  <img src={logo} alt="Logo" />
-                }
-              />
+        <div className="rightside w-full md:w-1/2 flex flex-col items-center md:items-end gap-12 relative z-10">
+            <div className="relative group/avatar">
+               <div className="absolute -inset-4 bg-sky-500/10 blur-3xl opacity-0 group-hover/avatar:opacity-100 transition-opacity"></div>
+               <TiltedCard
+                 imageSrc={devbratImg}
+                 altText="Devbrat Yadav"
+                 captionText="Devbrat Yadav"
+                 containerHeight="320px"
+                 containerWidth="270px"
+                 imageHeight="320px"
+                 imageWidth="270px"
+                 rotateAmplitude={15}
+                 scaleOnHover={1.05}
+                 showMobileWarning={false}
+                 showTooltip={true}
+                 displayOverlayContent={true}
+                 overlayContent={
+                   <div className="w-16 h-16 bg-white/10 backdrop-blur-3xl rounded-2xl flex items-center justify-center border border-white/20">
+                      <img src={logo} alt="Logo" className="w-10 h-10 object-contain" />
+                   </div>
+                 }
+               />
             </div>
         
-        <div className="flex gap-2 justify-center align-center">
+        <div className="flex flex-wrap gap-4 justify-center md:justify-end items-center">
           <SocialButton platform="linkedin" href="https://www.linkedin.com/in/devbrat1087" tooltip="LinkedIn" />
           <SocialButton platform="github" href="https://github.com/Devbrat9555" tooltip="GitHub" />
           <SocialButton platform="leetcode" href="https://leetcode.com/u/Devbrat_yadav" tooltip="LeetCode" />
           <SocialButton platform="instagram" href="https://www.instagram.com/devbrat_yadav" tooltip="Instagram" />
-          <SocialButton platform="whatsapp" href="https://wa.me/91XXXXXXXXXX?text=Hello Devbrat!" tooltip="WhatsApp" />
+          <SocialButton platform="whatsapp" href="https://wa.me/917054619727" tooltip="WhatsApp" />
         </div>
 
       </div>

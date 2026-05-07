@@ -9,8 +9,8 @@ import Hero from '../Components/Hero';
 import Tools from '../Components/Tools.jsx';
 import ProjectCard from '../Components/ProjectCard';
 import { projects } from "../Components/ProjectData";
-import About from '../Components/About';
-import Skills from '../Components/Skills.jsx';
+import AboutSection from '../Components/AboutSection';
+import Expertise from '../Components/Expertise.jsx';
 import Footer from '../Components/Footer.jsx';
 import { LettersPullUp } from './../framer/LettersPullUp';
 
@@ -98,14 +98,14 @@ export default function HomePage() {
   ))}
 </div>
 </section>
-{/* Skills Section */}
-<section id="skills" className="bg-[black]  px-4"> 
-      <Skills />
+{/* Expertise Section */}
+<section id="skills" className="bg-[black] px-4"> 
+      <Expertise />
 </section> 
 
       {/* About Section*/}   
-    <section id="about" className="bg-black py-20 px-4 ">  
-      <About />
+    <section id="about" className="bg-black py-20 px-4">  
+      <AboutSection />
     </section> 
  
     </main>
