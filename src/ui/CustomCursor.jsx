@@ -20,6 +20,13 @@ export default function CustomCursor() {
   const trailY = useSpring(cursorY, trailConfig);
 
   useEffect(() => {
+    // Check if it's a touch device
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    if (isTouchDevice) {
+      setIsHidden(true);
+      return;
+    }
+
     const handleMouseMove = (e) => {
       cursorX.set(e.clientX);
       cursorY.set(e.clientY);

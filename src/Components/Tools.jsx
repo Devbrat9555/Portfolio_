@@ -26,6 +26,18 @@ export default function Skills() {
   const rotationY = useMotionValue(0);
   const speed = useMotionValue(0.2); // Normal speed
   const smoothSpeed = useSpring(speed, { stiffness: 50, damping: 20 });
+  const [radius, setRadius] = useState(450);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 640) setRadius(180);
+      else if (window.innerWidth < 1024) setRadius(300);
+      else setRadius(450);
+    };
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useAnimationFrame((time, delta) => {
     const currentRotation = rotationY.get();
@@ -75,7 +87,7 @@ export default function Skills() {
                 rel="noopener noreferrer"
                 className="absolute"
                 style={{
-                  transform: `rotateY(${angle}deg) translateZ(450px)`,
+                  transform: `rotateY(${angle}deg) translateZ(${radius}px)`,
                   transformStyle: 'preserve-3d'
                 }}
               >

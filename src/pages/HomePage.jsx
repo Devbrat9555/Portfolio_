@@ -18,14 +18,14 @@ import { LettersPullUp } from './../framer/LettersPullUp';
 // Function to calculate sticky top position based on index and screen size
 const getStickyTop = (index) => {
   if (window.innerWidth < 640) {
-    // Mobile
-    return 0 + index * 5;
+    // Mobile - more gap to prevent overlap
+    return 20 + index * 40;
   } else if (window.innerWidth < 1024) {
     // Tablet
-    return 75 + index * 10;
+    return 50 + index * 30;
   } else {
     // Desktop
-    return 150 + index * 10;
+    return 120 + index * 20;
   }
 };
 
