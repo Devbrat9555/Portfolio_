@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from '../assets/Logo VA.png';
-import resume from '../assets/Resume/Resume.pdf';
+import logo from '../assets/VY_Logo.png';
+import resume from '../assets/Vrat_Resume_.pdf';
 import { Home, User, Briefcase, Mail, Layers} from 'lucide-react';  
 import Particles from '../ui/Particles.jsx';
 import { NavBar } from '../Components/NavBar.jsx';

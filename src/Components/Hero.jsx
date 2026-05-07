@@ -1,7 +1,7 @@
 import React from 'react'
 import { SparklesCore } from '../ui/Sparkles.jsx';
 import LightRays from '../ui/LightRays.jsx';
-import resume from '../assets/Resume/Resume.pdf';
+import resume from '../assets/Vrat_Resume_.pdf';
 import { motion } from 'framer-motion';
 
 export default function Hero() {

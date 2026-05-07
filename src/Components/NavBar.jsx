@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Home, User, Briefcase, Mail } from "lucide-react";
 import { HoverBorderGradient } from "../ui/HoverBorderGradient.jsx";
-import resume from '../assets/Resume/Resume.pdf';
+import resume from '../assets/Vrat_Resume_.pdf';
 
 /**
  * Utility function to merge classnames

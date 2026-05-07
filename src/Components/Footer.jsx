@@ -6,8 +6,8 @@ import SocialButton from '../ui/Buttons/SocialButton.jsx';
 import TiltedCard from '../ui/Cards/TiltedCard.jsx';
 import devbratImg from '../assets/Devbrat.png';
 import FooterNote from '../ui/FooterNote.jsx';
-import logo from '../assets/Logo VA.png';
-import resume from '../assets/Resume/Resume.pdf';
+import logo from '../assets/VY_Logo.png';
+import resume from '../assets/Vrat_Resume_.pdf';
 
 function Footer() {
   return (
