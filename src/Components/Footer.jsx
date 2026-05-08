@@ -97,8 +97,8 @@ function Footer() {
           <SocialButton platform="linkedin" href="https://www.linkedin.com/in/devbrat1087" tooltip="LinkedIn" />
           <SocialButton platform="github" href="https://github.com/Devbrat9555" tooltip="GitHub" />
           <SocialButton platform="leetcode" href="https://leetcode.com/u/Devbrat_yadav" tooltip="LeetCode" />
-          <SocialButton platform="instagram" href="https://www.instagram.com/devbrat_yadav" tooltip="Instagram" />
-          <SocialButton platform="whatsapp" href="https://wa.me/917054619727" tooltip="WhatsApp" />
+          <SocialButton platform="instagram" href="https://www.instagram.com/derek2._.0" tooltip="Instagram" />
+          <SocialButton platform="whatsapp" href="https://wa.me/919555977917" tooltip="WhatsApp" />
         </div>
 
       </div>
