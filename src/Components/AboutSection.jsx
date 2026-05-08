@@ -54,12 +54,12 @@ export default function AboutSection() {
             className="p-8 bg-white/[0.03] border border-white/5 rounded-[32px] backdrop-blur-3xl relative"
           >
              <p className="text-lg text-slate-400 leading-relaxed font-light">
-                Currently a final-year CS student at <span className="text-white font-medium">Prasad Institute of Technology</span>. 
+                Currently a final-year CS student at <span className="text-white font-medium">Prasad Institute of Technology, Jaunpur</span>. 
                 I focus on the <span className="text-sky-400">MERN stack</span> and <span className="text-sky-400">DSA</span>, 
                 building applications that are as scalable as they are performant.
              </p>
              <div className="mt-6 flex flex-wrap gap-3">
-                <div className="px-3 py-1.5 bg-sky-500/10 rounded-lg border border-sky-500/20 text-sky-400 text-[10px] font-bold uppercase tracking-widest">AKTU / Jaunpur</div>
+                <div className="px-3 py-1.5 bg-sky-500/10 rounded-lg border border-sky-500/20 text-sky-400 text-[10px] font-bold uppercase tracking-widest">AKTU, Lucknow</div>
                 <div className="px-3 py-1.5 bg-emerald-500/10 rounded-lg border border-emerald-500/20 text-emerald-400 text-[10px] font-bold uppercase tracking-widest">Batch 2022-26</div>
              </div>
           </motion.div>
