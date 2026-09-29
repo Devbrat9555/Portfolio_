@@ -71,8 +71,37 @@ import portfolioNew from "../assets/projects/Portfolio_new.png";
       gradientTo: "to-transparent",
       borderGlow: "#22d3ee",
       imageUrl: portfolioNew,
-      liveLink: "http://localhost:5173",
+      liveLink: "https://my-portfolio-eta-jade-72.vercel.app",
       githubLink: "https://github.com/Devbrat9555/Portfolio_"
+    },
+    {
+      title: "BookMaker Ultimate",
+      description: "Advanced WYSIWYG editor tailored for professional typesetting and A4 paper simulation with seamless PDF export.",
+      techStack: [
+        { name: "React", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+        { name: "Tailwind CSS", logo: "https://www.svgrepo.com/show/374118/tailwind.svg" }
+      ],
+      gradientFrom: "from-transparent",
+      gradientVia: "via-purple-500/10",
+      gradientTo: "to-transparent",
+      borderGlow: "#a855f7",
+      imageUrl: "",
+      liveLink: "https://github.com/Devbrat9555/BookMaker",
+      githubLink: "https://github.com/Devbrat9555/BookMaker"
+    },
+    {
+      title: "Adaptive Self-Learning AI Agent",
+      description: "Interactive Web-based AI Agent with long-term user context memory and continuous self-learning using Gemini API.",
+      techStack: [
+        { name: "Python", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" }
+      ],
+      gradientFrom: "from-transparent",
+      gradientVia: "via-blue-500/10",
+      gradientTo: "to-transparent",
+      borderGlow: "#3b82f6",
+      imageUrl: "",
+      liveLink: "https://github.com/Devbrat9555/Adaptive-Self-Learning-AI-Agent",
+      githubLink: "https://github.com/Devbrat9555/Adaptive-Self-Learning-AI-Agent"
     }
   ];
 
